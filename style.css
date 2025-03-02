@@ -21,10 +21,10 @@ font-family: 'Nunito', sans-serif;
 
 :root {
 
-    --bg-color: #1995AD; /* Light lime green background */
-    --snd-bg-color:  #A1D6E2; /* Slightly darker light lime green */
-    --text-color: #002C54; /* Darker green for text */
-    --main-color:  #F1F1F2; /* Light lime green main color */
+    --bg-color: #1995AD; 
+    --snd-bg-color:  #A1D6E2; 
+    --text-color: #002C54; 
+    --main-color:  #F1F1F2; 
 }
 
 html {
