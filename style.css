@@ -21,10 +21,10 @@ font-family: 'Nunito', sans-serif;
 
 :root {
 
-    --bg-color: #000000ff; 
-    --snd-bg-color:  #9a9a9aff; 
-    --text-color: #fffdfdff; 
-    --main-color:  #00b597ff; 
+    --bg-color: #474973;
+    --snd-bg-color: #9DB6C9;
+    --text-color: #F7F2EB; 
+    --main-color:  #BAD6EB; 
 }
 
 html {
