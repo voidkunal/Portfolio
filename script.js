@@ -1,138 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="website icon" type="png" href="site.png">
-</head>
-<body>
-    <header>
-        <a href="#" class="logo">Portfolio</a>
-       <div class="icon1">
-        <i id="bar" class="fa-solid fa-bars" id="toggle"></i>
-       </div>
-        <div class="navbar">
-            <a href="#home" class="active">Home</a> 
-            <a href="#about" class="active">About</a>
-            <a href="#services" class="active">Services</a> 
-            <a href="#portfolio" class="active">Portfolio</a>
-            <a href="#album" class="active">Album</a> <a href="#contact" class="active">Contact</a>
-        </div>
+/******************************************** toggle icon portfolio in header ********************************************/
 
-        <section class="home" id="home">
-            <div class="home-content">
-                <h3>Hi, Myself</h3>
-                <h1>Kunal Mandal</h1>
-                <h3>Ex Intern @SeeUp tech | Student of Techno India University & Full Stack Developer <span class="multiple-text"></span></h3>
-                <p>Ex Intern @SeeUp tech | Computer Science Student at Techno India University | Skilled in Software Development and Problem Solving | Active in Machine Learning & Web Development | Vibe Coder</p>
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/kunal-mandal-689686243"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://youtube.com/@voidkunal?si=hp8c0Swi7eeLhhFo"><i class="fab fa-youtube"></i></a>
-                    <a href="https://github.com/voidkunal?fbclid=IwZXh0bgNhZW0CMTAAAR07uaS40iLJ2PFssR-E4XQVmfh5MetRqAUc34uD2u7FB772t4D5kWRdydk_aem_AdRGdifTHZo1ltIiEFNDyM4yiVA8HOufSV0ZyEZBa5A8n3q55sVj4G62B7yvHawCuGcf2t_L6EJ19wk8Ty-dlOJS"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com/KunalMandal0417"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61554794866949"><i class="fab fa-facebook"></i></a> 
-                </div>
-                <a href="KunalMandalResume.pdf" class="btn" download="">RESUME</a>
-            </div>
-            <div class="home-img">
-                <img src="image.jpg" alt="Profile picture">  
-            </div>
-        </section> 
-        
-        <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <video autoplay muted loops  plays-inline id="video-pbox1"> 
-                   <source src="laptop.mp4" type="video/mp4"> 
-                </video>
+let icon = document.querySelector(".icon1");
+let ul = document.querySelector("navbar a");
+icon.addEventListener("click", () => {
+    navbar .classList.toggle("showData");
+    if (navbar .classList.contains("showData")) {
+        document.getElementById("bar").className = "fa-solid fa-xmark";
+    } else {
+        document.getElementById("bar").className = "fa-solid fa-bars";
+    }
+});
 
-                <video autoplay muted loops  plays-inline id="video-pbox2"> 
-                    <source src="mobile.mp4" type="video/mp4"> 
-                </video>
-            
-              <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                   <p>Let's start ez your life with me ! (https://void-healthcare.onrender.com)</p>
-                    <i class="fas fa-arrow-up"></i> 
-                </div> 
-            </div>
-            </div>
-    </section>
 
-        <section class="services" id="services">
-            <h2 class="heading">My <span>Services</span></h2>
-            <div class="services-container">
-                <div class="services-box">
-                    <i class="fas fa-code"></i> 
-                    <h3>UI & Frontend</h3>
-                   <a href="https://voidkunal.github.io/DataDiggers/" class="btn">Touch Me</a>
-                </div>
-                <div class="services-box">
-                    <i class="fa-solid fa-microchip"></i> 
-                    <h3>Full Stack</h3>    
-                    <a href="https://mini-frontend-green.vercel.app" class="btn">Hit Me</a>
-                </div>
-                <div class="services-box">
-                    <i class="fa-solid fa-book"></i>
-                    <h3>C-Note</h3>
-                    <a href="c.pdf" class="btn" download="">Download Notes</a>
-                </div>
-            </div>
-        </section>
+/******************************************** toggle icon navbar ********************************************/
 
-        <section class="about" id="about">
-            <div class="about-img">
-                <img src="img/aboutpic.png" alt="">
-            </div>
-            <div class="about-content">
-                <h2 class="heading">Certificate<span> </span></h2>
-                <h3>WordPress Developer Intern</h3>
-                <p></p>
-                <a href="Kunal Mandal - Internship Certificate.pdf" class="btn">Open Me</a>
-            </div>
-        </section>
+let menuIcon = document.querySelector('#menu-icon'); // Corrected variable name
+let navbar = document.querySelector('header .navbar'); // Added 'header' to querySelector for specificity
 
-        <section class="album" id="album">
-            <h2 class="heading">My <span>Gallery</span></h2>
-            <p style="text-align: center; font-size: 1.6rem; margin-bottom: 4rem;">Powered by voidememo API</p>
-            <div class="album-container" id="voidememo-gallery">
-                </div>
-        </section>
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('fa-xmark');
+    navbar.classList.toggle('active');
+}
 
-        <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me</span></h2>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name" class="contact-inputs" required> 
-                    <input type="email" placeholder="Email Address" class="contact-inputs" required>
-                </div>
-                <div class="input-box">
-                    <input type="tel" placeholder="Mobile Number" class="contact-inputs" required> 
-                    <input type="text" placeholder="Email Subject" class="contact-inputs" required>
-                </div>
-                <input type="hidden" name="access_key" value="ece7605d-da3c-4c81-83b0-218711cce0df">
-                <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" class="contact-inputs" required></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
-        </section>
+/******************************************** scroll section active link ********************************************/
 
-        <footer class="footer">
-            <div class="footer-text">
-                <p>Copyright &copy; 2024 by @Kunal_Mandal | All Rights Reserved.</p>
-            </div>
-            <div class="footer-iconTop">
-                <a href="#home"><i class="fas fa-angle-up"></i></a>
-            </div>
-        </footer>
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
-    </header>
+window.onscroll = () => {
+    let top = window.scrollY; // Corrected variable name
+    sections.forEach(sec => {
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+        if (top > offset && top < offset + height) {
+            navLinks.forEach(link => {
+                link.classList.remove('active'); // Corrected variable name
+            });
+            document.querySelector('header nav a[href="#' + id + '"]').classList.add('active'); // Added '#' and corrected concatenation
+        }
+    });
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+    /******************************************** sticky navbar ********************************************/
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 100); // Corrected variable name
+
+    /******************************************** remove toggle icon and navbar ********************************************/
+    if (!navbar.classList.contains('active')) { // Added check to only remove class if navbar is not active
+        menuIcon.classList.remove('fa-xmark');
+    }
+    if (!menuIcon.classList.contains('fa-xmark')) { // Added check to only remove class if icon is not active
+        navbar.classList.remove('active');
+    }
+}
+
+/******************************************** scroll reveal ********************************************/
+
+ScrollReveal({
+    distance: '80px',
+    duration: 2000,
+    delay: 200,
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' }); // Corrected class name
+
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' }); // Corrected class name
+
+ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' }); // Corrected class name
+
+ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' }); // Corrected class name
+
+/******************************************** typed js ********************************************/
+
+const typed = new Typed('.multiple-text', {
+    strings: ['Frontend Developer', 'Web Designer', 'Youtuber'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 1000,
+    loop: true,
+});
