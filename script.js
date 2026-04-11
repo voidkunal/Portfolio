@@ -64,7 +64,8 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' }); // Corrected class name
 
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' }); // Corrected class name
+/* ADDED .gallery-container to make the gallery animate as well */
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .gallery-container, .contact form', { origin: 'bottom' }); 
 
 ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' }); // Corrected class name
 
@@ -79,3 +80,4 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
 });
+
