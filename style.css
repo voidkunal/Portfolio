@@ -413,6 +413,38 @@ box-shadow: none;
     color: var(--snd-bg-color);
     }
 
+
+/* --- NEW GALLERY SECTION CSS --- */
+.gallery {
+    background: var(--bg-color);
+}
+
+.gallery h2 {
+    margin-bottom: 4rem;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.gallery-container img, .gallery-container video {
+    width: 30vw;
+    max-width: 300px;
+    height: auto;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1rem var(--snd-bg-color);
+    transition: .5s ease;
+}
+
+.gallery-container img:hover, .gallery-container video:hover {
+    transform: scale(1.05);
+}
+/* -------------------------------- */
+
+
 .contact h2 {
         margin-bottom: 3rem;
     }
@@ -609,6 +641,10 @@ margin: .7rem 0;
     .icon{
         display: flex;
         cursor: pointer;
+    }
+    
+    .gallery-container img, .gallery-container video {
+        width: 40vw; /* larger on smaller screens */
     }
 
 }
@@ -859,9 +895,7 @@ margin: .7rem 0;
     .contact form {
 
         margin-left :1vw;
-}
-
-    
+    }
 
     #video-pbox1 {
         display: none;
@@ -874,6 +908,11 @@ margin: .7rem 0;
         width : 42%;
         border-radius: 20%;
     }
+    
+    .gallery-container img, .gallery-container video {
+        width: 80vw; /* Full width on mobile */
+    }
+
     .footer-text {
     
         font-size: 1.5rem;
@@ -1122,3 +1161,5 @@ margin: .7rem 0;
        width : 2.7rem;
     }
 } 
+
+}
