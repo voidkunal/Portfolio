@@ -294,7 +294,7 @@ box-shadow: none;
 
 .services-box p {
     font-size: 1.6rem;
-    margin: 1ren 0 3rem;
+    margin: 1rem 0 3rem;
 }
 
 .portfolio {
@@ -325,7 +325,7 @@ box-shadow: none;
     
     border-radius: 2rem;
     
-    box-shadow: 0 0 trem var(--bg-color);
+    box-shadow: 0 0 1rem var(--bg-color);
     
     overflow: hidden;
     
@@ -361,7 +361,7 @@ box-shadow: none;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(Orgba(0, 0, 0, 0.1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -451,10 +451,9 @@ box-shadow: none;
 
 .contact form {
         max-width: 70rem;
-        margin: trem auto;
+        margin: 1rem auto;
         text-align: center;
         margin-bottom: 3rem;
-        margin-left :13.5vw;
 }
 .contact form.input-box {
 
@@ -569,7 +568,6 @@ margin: .7rem 0;
           border : none;
       }
      .contact form {
- 
          margin-left :10vw;
          max-width : 100%;
      }
@@ -740,7 +738,7 @@ margin: .7rem 0;
 }
 
 .services h2{
-    margin-bottom: 3ren;
+    margin-bottom: 3rem;
 }
 
 .portfolio h2 {
@@ -749,13 +747,13 @@ margin: .7rem 0;
 
 .portfolio-box {
 
-    width: 30;
-    height: 60vh;
-    border-radius: 50%;
-    margin-right: 12vw;
-    
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 2rem;
+    margin: 0 auto;
     transition: .5s ease;
-    
     opacity: 0.7;
     
 }
@@ -771,8 +769,9 @@ margin: .7rem 0;
 }
 
 .contact form {
-
-    margin-left :1vw;
+    margin-left :0;
+    width: 100%;
+    padding: 0 5vw;
 }
 
 
@@ -784,12 +783,14 @@ margin: .7rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    width : 35%;
-    height: 95%;
-    border-radius: 7%;
+    width : 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
 }
 
-.portfolio-layer h4, p, i {
+/* FIX: Changed comma selector so it only hides portfolio text, not the whole website's text! */
+.portfolio-layer h4, .portfolio-layer p, .portfolio-layer i {
     display: none;
     overflow: hidden;
 }
@@ -877,7 +878,8 @@ margin: .7rem 0;
         margin-top: 4rem;
     }
 
-    .portfolio-layer h4, p, i {
+    /* FIX: Corrected comma selector */
+    .portfolio-layer h4, .portfolio-layer p, .portfolio-layer i {
         display: none;
         overflow: hidden;
     }
@@ -893,8 +895,9 @@ margin: .7rem 0;
     }
 
     .contact form {
-
-        margin-left :1vw;
+        margin-left :0;
+        width: 100%;
+        padding: 0 5vw;
     }
 
     #video-pbox1 {
@@ -905,8 +908,10 @@ margin: .7rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        width : 42%;
-        border-radius: 20%;
+        width : 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2rem;
     }
     
     .gallery-container img, .gallery-container video {
@@ -963,8 +968,9 @@ margin: .7rem 0;
     }
 
     .contact form {
-
-        margin-left :1vw;
+        margin-left :0;
+        width: 100%;
+        padding: 0 5vw;
 }
 
     .contact form.input-box input {
@@ -972,7 +978,8 @@ margin: .7rem 0;
         width: 80vw;
     }
 
-    .portfolio-layer h4, p, i {
+    /* FIX: Corrected comma selector */
+    .portfolio-layer h4, .portfolio-layer p, .portfolio-layer i {
         display: none;
         overflow: hidden;
     }
@@ -1001,7 +1008,10 @@ margin: .7rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        width : 40.5%;
+        width : 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2rem;
     }
  
     .footer-text {
@@ -1073,7 +1083,7 @@ margin: .7rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        width : 39.5%;
+        width : 100%;
         border-radius: 20%;
     }
      .footer-text {
@@ -1111,7 +1121,7 @@ margin: .7rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        width : 39.5%;
+        width : 100%;
         border-radius: 20%;
     }
      .footer-text {
@@ -1149,7 +1159,7 @@ margin: .7rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        width : 55.5%;
+        width : 100%;
         border-radius: 20%;
     }
  
@@ -1160,6 +1170,4 @@ margin: .7rem 0;
     .footer-iconTop  {
        width : 2.7rem;
     }
-} 
-
 }
