@@ -3,101 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Kunal Mandal | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="website icon" type="png" href="site.png">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Portfolio</a>
-       <div class="icon1">
-        <i id="menu-icon" class="fa-solid fa-bars"></i>
-       </div>
-        <div class="navbar">
-            <a href="#home" class="active">Home</a> 
-            <a href="#about" class="active">About</a>
-            <a href="#services" class="active">Services</a> 
-            <a href="#portfolio" class="active">Portfolio</a>
-            <a href="#gallery" class="active">Gallery</a>
-            <a href="#contact" class="active">Contact</a>
+
+    <header class="header">
+        <a href="#home" class="logo">Portfolio</a>
+        
+        <div class="menu-btn">
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
         </div>
 
-         <section class="home" id="home">
-            <div class="home-content">
-                <h3> Hi, Myself </h3>
-                <h1> Kunal Mandal </h1>
-                <h3> Ex Intern @SeeUp tech | Student of Techno India University & Full Stack Developer <span class="multiple-text"></span></h3>
-                <p> Ex Intern @SeeUp tech | Computer Science Student at Techno India University | Skilled in AI, Software Problem Solving | Active in AI & Web Development | Vibe Coder </p>
-                <div class="social-media">
-                    <a href="https://www.linkedin.com/in/kunal-mandal-689686243"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://youtube.com/@voidkunal?si=hp8c0Swi7eeLhhFo"><i class="fab fa-youtube"></i></a>
-                    <a href="https://github.com/voidkunal?fbclid=IwZXh0bgNhZW0CMTAAAR07uaS40iLJ2PFssR-E4XQVmfh5MetRqAUc34uD2u7FB772t4D5kWRdydk_aem_AdRGdifTHZo1ltIiEFNDyM4yiVA8HOufSV0ZyEZBa5A8n3q55sVj4G62B7yvHawCuGcf2t_L6EJ19wk8Ty-dlOJS"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com/KunalMandal0417"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61554794866949"><i class="fab fa-facebook"></i></a> 
-                </div>
-                <a href="KunalMandalResume.pdf" class="btn" download="">RESUME</a>
-            </div>
-            <div class="home-img">
-                <img src="image.jpg" alt="Profile picture">  
-            </div>
-        </section> 
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a> 
+            <a href="#about">About</a>
+            <a href="#services">Services</a> 
+            <a href="#portfolio">Projects</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-         <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <video autoplay muted loop playsinline id="video-pbox1"> 
-                   <source src="laptop.mp4" type="video/mp4"> 
-                </video>
-
-                <video autoplay muted loop playsinline id="video-pbox2"> 
-                    <source src="mobile.mp4" type="video/mp4"> 
-                </video>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Kunal Mandal</h1>
+            <h3>Ex Intern @SeeUp tech | Student of Techno India University & Full Stack Developer <span class="multiple-text"></span></h3>
+            <p>Computer Science Student at Techno India University | Skilled in AI, Software Problem Solving | Active in AI & Web Development | Vibe Coder</p>
             
-              <div class="portfolio-layer">
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/kunal-mandal-689686243" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://youtube.com/@voidkunal?si=hp8c0Swi7eeLhhFo" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/voidkunal" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/KunalMandal0417" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61554794866949" target="_blank"><i class="fab fa-facebook"></i></a> 
+            </div>
+            
+            <a href="KunalMandalResume.pdf" class="btn" download>Download Resume</a>
+        </div>
+        
+        <div class="home-img">
+            <img src="image.jpg" alt="Kunal Mandal Profile Picture">  
+        </div>
+    </section> 
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/aboutpic.png" alt="About Me">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>WordPress Developer Intern</h3>
+            <p>Successfully completed my internship at SeeUp Tech, enhancing my real-world development skills and understanding of professional software environments.</p>
+            <a href="Kunal Mandal - Internship Certificate.pdf" class="btn" target="_blank">View Certificate</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        
+        <div class="services-container">
+            <div class="service-box">
+                <i class="fas fa-code"></i> 
+                <h3>AI Solutions</h3>
+                <p>Building intelligent systems, object detection models, and data-driven applications.</p>
+                <a href="https://voidmemo.streamlit.app" class="btn" target="_blank">Touch Me</a>
+            </div>
+            
+            <div class="service-box">
+                <i class="fa-solid fa-microchip"></i> 
+                <h3>Full Stack</h3>    
+                <p>Developing robust, scalable web applications using modern MERN stack technologies.</p>
+                <a href="https://mini-frontend-green.vercel.app" class="btn" target="_blank">Hit Me</a>
+            </div>
+            
+            <div class="service-box">
+                <i class="fa-solid fa-book"></i>
+                <h3>UI & UX Design</h3>
+                <p>Creating intuitive, user-friendly, and highly responsive frontend interfaces.</p>
+                <a href="https://voidkunal.github.io/DataDiggers/" class="btn" target="_blank">Have a Look</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        
+        <div class="portfolio-container">
+            <div class="portfolio-card">
+                <div class="video-container">
+                    <video autoplay muted loop playsinline class="desktop-video"> 
+                        <source src="laptop.mp4" type="video/mp4"> 
+                    </video>
+                    <video autoplay muted loop playsinline class="mobile-video"> 
+                        <source src="mobile.mp4" type="video/mp4"> 
+                    </video>
+                </div>
+                <div class="portfolio-layer">
                     <h4>Web Design</h4>
-                   <p>Let's start ez your life with me ! (https://void-healthcare.onrender.com)</p>
-                    <i class="fas fa-arrow-up"></i> 
+                    <p>Let's start ez your life with me !</p>
+                    <a href="https://void-healthcare.onrender.com" target="_blank"><i class="fas fa-arrow-up"></i></a> 
                 </div> 
             </div>
             </div>
     </section>
 
-         <section class="services" id="services">
-            <h2 class="heading">My <span>Services</span></h2>
-            <div class="services-container">
-                <div class="services-box">
-                    <i class="fas fa-code"></i> 
-                    <h3>AI</h3>
-                   <a href="https://voidmemo.streamlit.app" class="btn" download="">Touch Me</a>
-                </div>
-                <div class="services-box">
-                    <i class="fa-solid fa-microchip"></i> 
-                    <h3>Full Stack</h3>    
-                    <a href="https://mini-frontend-green.vercel.app" class="btn">Hit Me</a>
-                </div>
-                <div class="services-box">
-                    <i class="fa-solid fa-book"></i>
-                    <h3>UI & UX Design</h3>
-                    <a href="https://voidkunal.github.io/DataDiggers/" class="btn">Have a Look</a>
-                </div>
-            </div>
-        </section>
-
-         <section class="about" id="about">
-            <div class="about-img">
-                <img src="img/aboutpic.png" alt="">
-            </div>
-            <div class="about-content">
-                <h2 class="heading">Certificate<span> </span></h2>
-                <h3>WordPress Developer Intern</h3>
-                <p></p>
-                <a href="Kunal Mandal - Internship Certificate.pdf" class="btn">Open Me</a>
-            </div>
-        </section>
-
-         <section class="gallery" id="gallery">
+    <section class="gallery" id="gallery">
             <h2 class="heading">My <span>Gallery</span></h2>
             
             <iframe 
@@ -109,37 +123,40 @@
             
         </section>
 
-        <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me</span></h2>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name" class="contact-inputs" required> 
-                    <input type="email" placeholder="Email Address" class="contact-inputs" required>
-                </div>
-                <div class="input-box">
-                    <input type="tel" placeholder="Mobile Number" class="contact-inputs" required> 
-                    <input type="text" placeholder="Email Subject" class="contact-inputs" required>
-                </div>
-                <input type="hidden" name="access_key" value="ece7605d-da3c-4c81-83b0-218711cce0df">
-                <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" class="contact-inputs" required></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
-        </section>
-
-        <footer class="footer">
-            <div class="footer-text">
-                <p>Copyright &copy; 2024 by Kunal_Mandal | All Rights Reserved.</p>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="ece7605d-da3c-4c81-83b0-218711cce0df">
+            
+            <div class="input-group">
+                <input type="text" name="Full_Name" placeholder="Full Name" required> 
+                <input type="email" name="Email" placeholder="Email Address" required>
             </div>
-            <div class="footer-iconTop">
-                <a href="#home"><i class="fas fa-angle-up"></i></a>
+            
+            <div class="input-group">
+                <input type="tel" name="Phone" placeholder="Mobile Number" required> 
+                <input type="text" name="Subject" placeholder="Email Subject" required>
             </div>
-        </footer>
+            
+            <textarea name="Message" cols="30" rows="8" placeholder="Your Message" required></textarea>
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
 
-    </header>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Kunal_Mandal | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fas fa-angle-up"></i></a>
+        </div>
+    </footer>
 
-     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
     
-    </body>
+</body>
 </html>
