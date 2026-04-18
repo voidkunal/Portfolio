@@ -1,21 +1,9 @@
-/******************************************** toggle icon portfolio in header ********************************************/
-
-let icon = document.querySelector(".icon1");
-let ul = document.querySelector("navbar a");
-icon.addEventListener("click", () => {
-    navbar .classList.toggle("showData");
-    if (navbar .classList.contains("showData")) {
-        document.getElementById("bar").className = "fa-solid fa-xmark";
-    } else {
-        document.getElementById("bar").className = "fa-solid fa-bars";
-    }
-});
-
-
 /******************************************** toggle icon navbar ********************************************/
+// FIX: Removed the conflicting first block that caused null errors. 
+// Now the hamburger menu clicks open and close correctly without breaking the page.
 
-let menuIcon = document.querySelector('#menu-icon'); // Corrected variable name
-let navbar = document.querySelector('header .navbar'); // Added 'header' to querySelector for specificity
+let menuIcon = document.querySelector('#menu-icon'); 
+let navbar = document.querySelector('header .navbar'); 
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-xmark');
@@ -37,7 +25,10 @@ window.onscroll = () => {
             navLinks.forEach(link => {
                 link.classList.remove('active'); // Corrected variable name
             });
-            document.querySelector('header nav a[href="#' + id + '"]').classList.add('active'); // Added '#' and corrected concatenation
+            let activeLink = document.querySelector('header nav a[href="#' + id + '"]');
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
         }
     });
 
@@ -80,4 +71,3 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
 });
-
